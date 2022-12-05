@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.div-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+  gap: 7rem;
+}
+.left-side {
+  border: 1px solid;
+  padding: 50px 35px;
+  text-align: center;
+  background-color: cyan;
+  font-family: cursive;
+}
+.right-side {
+  display: grid;
+  gap: 2rem;
+}
+p.paragrph {
+  text-align: center;
+  font-family: cursive;
+}
+label.label {
+  text-align: center;
+  font-family: cursive;
+}
+input.input-text {
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid;
+  height: 2rem;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 4px;
+}
+button.btn {
+  height: 3rem;
+  width: 14rem;
+  cursor: pointer;
+  color: blue;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid black;
+  font-family: cursive;
+}
