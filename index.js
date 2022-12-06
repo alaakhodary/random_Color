@@ -27,7 +27,21 @@ button.addEventListener("click", function () {
 });
 
 // To write the hex-Color in the input and show in the div element
-function changeColor(className) {
-  document.getElementsByClassName("left-side")[0].style.background =
-    document.getElementsByClassName(className)[0].value;
-}
+inputText.addEventListener("keydown", function (e) {
+  leftSide.style.backgroundColor = e.target.value;
+  // e => event
+  // target => inputText
+});
+
+let timer;
+leftSide.addEventListener("mouseover", function () {
+  timer = setInterval(() => {
+    var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    document.querySelector(".left-side").style.backgroundColor =
+      "#" + randomColor;
+  }, 500);
+});
+
+leftSide.addEventListener("mouseout", function () {
+  clearInterval(timer);
+});
